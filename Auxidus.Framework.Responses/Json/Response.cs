@@ -11,6 +11,29 @@ namespace Auxidus.Framework.Responses.Json
         public List<string> Messages { get; set; }
         public T Data { get; set; }
 
+        public Response()
+        {
+            Messages = new List<string>();
+        }
+        public Response(T data, ResponseStatus status = ResponseStatus.SUCCESS)
+        {
+            Messages = new List<string>();
+            Data = data;
+            Status = status;
+        }
+        public Response(ResponseStatus status, List<string> messages)
+        {
+            Messages = messages ?? new List<string>();
+            Status = status;
+            Messages = new List<string>();
+        }
+        public Response(T data, ResponseStatus status, List<string> messages)
+        {
+            Messages = messages ?? new List<string>();
+            Status = status;
+            Data = data;
+        }
+
         public static Response<T> EmptySuccess()
         {
             return new Response<T>()
