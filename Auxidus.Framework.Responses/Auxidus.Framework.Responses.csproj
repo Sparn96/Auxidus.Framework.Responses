@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Copyright>Auxidus 2019</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/Sparn96/Auxidus.Framework.Responses</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Sparn96/Auxidus.Framework.Responses</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/Sparn96/Auxidus.Framework.Responses/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageTags>Auxidus, Framework, Response</PackageTags>
+    <Authors>Auxidus</Authors>
+    <Company>Auxidus</Company>
   </PropertyGroup>
 
 </Project>
